@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMAZING/SHOP</title>
+
+    <!-- Fonts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" href="assets/css/properties.css">
+
+
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+        <div class="block-color"></div>
+            <!-- Logo -->
+            <div class="nav">
+                <div class="nav-logo">
+                    <a href="home.html"><img src="assets/img/logo.png" alt="logo"></a>
+                </div>
+                <nav class="nav-block">
+                    <ul class="navigation">
+                        <li class="navigation__item"><a href="home.html">Главная</a></li>
+                        <li class="navigation__item nav-active"><a href="shop.html">Магазин</a>
+                            <ul class="navigation-new">
+                                <li class="navigation-new__item"><a href="product.html">Пальто</a></li>
+                                <li class="navigation-new__item"><a href="product.html">Свитшоты</a></li>
+                                <li class="navigation-new__item"><a href="product.html">Кардиганы</a></li>
+                                <li class="navigation-new__item"><a href="product.html">Толстовки</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item"><a href="about.html">О бренде</a></li>
+                        <li class="navigation__item"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-tel">
+                    <button type="button" id="nav-tel__btn" class="nav-tel__btn"></button>
+                    <div class="modals-wrapper" id="modals-wrapper">
+                        <div class="overlay" id="overlay"></div>
+                        <div class="modal-window" id="modal-window">
+                            <h3 class="modal-window__title">Заказать обратный звонок</h3>
+                            <form action="#" class="modal-window-form js-form form-cover" id="form-cover">
+                                <input type="text" name="firstName" placeholder="Имя" class="modal-window-form__item"> 
+                                <input type="email" name="email" class="modal-window-form__item" placeholder="E-mail">
+                                <input type="tel" name="phoneNumber" class="modal-window-form__item" placeholder="Телефон">
+                                <button type="submit" class="modal-window-form__btn btn" data-submit>Заказать звонок</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modals-wrapper_mini" id="modals-wrapper_mini">
+                        <div class="overlay" id="overlay"></div>
+                        <div class="modal-window_mini" id="modal-window_mini">
+                            <h3 class="modal-window_mini__title">Отлично! Мы скоро вам перезвоним.</h3>
+                            <button type="button" class="modal-window__btn">Закрыть</button>
+                        </div>
+                    </div>
+                    <p class="nav-tel__item"><a href="tel:+74958235412">+7 (495) 823-54-12</a></p>
+                </div>
+                <div class="nav-bag">
+                    <a href="bag.html" class="nav-bag__btn"></a>
+                </div>
+                <button type="button" class="mobile-menu">MENU</button>
+                <div class="tel-menu">
+                    <ul class="navigation-tel">
+                        <li class="navigation__item nav-active"><a href="home.html">Главная</a></li>
+                        <li class="navigation__item" id="shop"><a href="shop.html">Магазин</a>
+                            <ul class="navigation-new">
+                                <li class="navigation-new__item"><a href="product.html">Пальто</a></li>
+                                <li class="navigation-new__item"><a href="product.html">Свитшоты</a></li>
+                                <li class="navigation-new__item"><a href="product.html">Кардиганы</a></li>
+                                <li class="navigation-new__item"><a href="product.html">Толстовки</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item"><a href="about.html">О бренде</a></li>
+                        <li class="navigation__item"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <div class="container">
+            <section class="first-screen" id="first-screen">
+               <div class="bread-nav">
+                    <h1 class="bread-nav__title">Магазин</h1>
+                    <ul class="bread-nav-block">
+                        <li>
+                            <a href="home.html" class="bread-nav-block__item">Главная</a>
+                        </li>
+                        <li class="bread-nav-block__line"></li>
+                        <li>
+                            <span class="bread-nav-block__item bread-nav-block__item_select">Магазин</span>
+                        </li>
+                    </ul>
+               </div>
+            </section>
+            <section class="content" id="content">
+                <div class="products">
+                        <div class="category">
+                            <button type="button" class="category__btn category__btn_active btn category__btn-all">Все</button>
+                            <button type="button" class="category__btn btn" data-tab="1">Пальто</button>
+                            <button type="button" class="category__btn btn" data-tab="2">Свитшоты</button>
+                            <button type="button" class="category__btn btn" data-tab="3">Кардиганы</button>
+                            <button type="button" class="category__btn btn" data-tab="4">Толстовки</button>
+                        </div>
+                    <div class="goods-tape">
+                        <p class="goods-tape__view">Показано: <span>9</span> из <span>12</span> товаров</p>
+                    <div class="goods-tape-wrapper" data-content="1">
+                            <div class="goods-tape-block__item show" data-tab="0" data-page="1">
+                                    <div class="goods-tape-block__item-card">
+                                        <img src="assets/img/model.jpg" alt="model" class="model">
+                                        <div class="card__overlay">
+                                            <a href="product.html" class="card__overlay"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block-text">
+                                        <h4 class="block-text__title">Футболка USA</h4>
+                                        <div class="price-block">
+                                            <span class="price-block__item-old">$229</span>
+                                            <a href="#" class="price-block__item-new">$129</a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="goods-tape-block__item show" data-tab="0" data-page="1">
+                                <div class="goods-tape-block__item-card">
+                                    <img src="assets/img/model-two.jpg" alt="model" class="model">
+                                    <div class="card__overlay">
+                                        <a href="product.html" class="card__overlay"></a>
+                                    </div>
+                                </div>
+                                <div class="block-text">
+                                    <h4 class="block-text__title">Купальник Glow</h4>
+                                    <div class="price-block">
+                                        <span class="price-block__item-old"></span>
+                                        <a href="#" class="price-block__item-new">$129</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods-tape-block__item show" data-tab="2" data-page="1">
+                                <div class="goods-tape-block__item-card">
+                                    <img src="assets/img/model-three.jpg" alt="model" class="model">
+                                    <div class="card__overlay">
+                                        <a href="product.html" class="card__overlay"></a>
+                                    </div>
+                                </div>
+                                <div class="block-text">
+                                    <h4 class="block-text__title">Свитшот Sweet Shot</h4>
+                                    <div class="price-block">
+                                        <span class="price-block__item-old"></span>
+                                        <a href="#" class="price-block__item-new">$129</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods-tape-block__item show" data-tab="0" data-page="1">
+                                    <div class="goods-tape-block__item-card">
+                                        <img src="assets/img/model.jpg" alt="model" class="model">
+                                        <div class="card__overlay">
+                                            <a href="product.html" class="card__overlay"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block-text">
+                                        <h4 class="block-text__title">Футболка USA</h4>
+                                        <div class="price-block">
+                                            <span class="price-block__item-old">$229</span>
+                                            <a href="#" class="price-block__item-new">$129</a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="goods-tape-block__item show" data-tab="0" data-page="1">
+                                <div class="goods-tape-block__item-card">
+                                    <img src="assets/img/model-two.jpg" alt="model" class="model">
+                                    <div class="card__overlay">
+                                        <a href="product.html" class="card__overlay"></a>
+                                    </div>
+                                </div>
+                                <div class="block-text">
+                                    <h4 class="block-text__title">Купальник Glow</h4>
+                                    <div class="price-block">
+                                        <span class="price-block__item-old"></span>
+                                        <a href="#" class="price-block__item-new">$129</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods-tape-block__item show" data-tab="2" data-page="1">
+                                <div class="goods-tape-block__item-card">
+                                    <img src="assets/img/model-three.jpg" alt="model" class="model">
+                                    <div class="card__overlay">
+                                        <a href="product.html" class="card__overlay"></a>
+                                    </div>
+                                </div>
+                                <div class="block-text">
+                                    <h4 class="block-text__title">Свитшот Sweet Shot</h4>
+                                    <div class="price-block">
+                                        <span class="price-block__item-old"></span>
+                                        <a href="#" class="price-block__item-new">$129</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods-tape-block__item show" data-tab="0" data-page="1">
+                                    <div class="goods-tape-block__item-card">
+                                        <img src="assets/img/model.jpg" alt="model" class="model">
+                                        <div class="card__overlay">
+                                            <a href="product.html" class="card__overlay"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block-text">
+                                        <h4 class="block-text__title">Футболка USA</h4>
+                                        <div class="price-block">
+                                            <span class="price-block__item-old">$229</span>
+                                            <a href="#" class="price-block__item-new">$129</a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="goods-tape-block__item show" data-tab="0" data-page="1">
+                                <div class="goods-tape-block__item-card">
+                                    <img src="assets/img/model-two.jpg" alt="model" class="model">
+                                    <div class="card__overlay">
+                                        <a href="product.html" class="card__overlay"></a>
+                                    </div>
+                                </div>
+                                <div class="block-text">
+                                    <h4 class="block-text__title">Купальник Glow</h4>
+                                    <div class="price-block">
+                                        <span class="price-block__item-old"></span>
+                                        <a href="#" class="price-block__item-new">$129</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods-tape-block__item show" data-tab="2" data-page="1">
+                                <div class="goods-tape-block__item-card">
+                                    <img src="assets/img/model-three.jpg" alt="model" class="model">
+                                    <div class="card__overlay">
+                                        <a href="product.html" class="card__overlay"></a>
+                                    </div>
+                                </div>
+                                <div class="block-text">
+                                    <h4 class="block-text__title">Свитшот Sweet Shot</h4>
+                                    <div class="price-block">
+                                        <span class="price-block__item-old"></span>
+                                        <a href="#" class="price-block__item-new">$129</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods-tape-block__item-next" data-tab="0" data-page="2">
+                                    <div class="goods-tape-block__item-card">
+                                        <img src="assets/img/model.jpg" alt="model" class="model">
+                                        <div class="card__overlay">
+                                            <a href="product.html" class="card__overlay"></a>
+                                        </div>
+                                    </div>
+                                    <div class="block-text">
+                                        <h4 class="block-text__title">Футболка USA</h4>
+                                        <div class="price-block">
+                                            <span class="price-block__item-old">$229</span>
+                                            <a href="#" class="price-block__item-new">$129</a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="goods-tape-block__item-next" data-tab="0" data-page="2">
+                                <div class="goods-tape-block__item-card">
+                                    <img src="assets/img/model-two.jpg" alt="model" class="model">
+                                    <div class="card__overlay">
+                                        <a href="product.html" class="card__overlay"></a>
+                                    </div>
+                                </div>
+                                <div class="block-text">
+                                    <h4 class="block-text__title">Купальник Glow</h4>
+                                    <div class="price-block">
+                                        <span class="price-block__item-old"></span>
+                                        <a href="#" class="price-block__item-new">$129</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods-tape-block__item-next" data-tab="2" data-page="2">
+                                <div class="goods-tape-block__item-card">
+                                    <img src="assets/img/model-three.jpg" alt="model" class="model">
+                                    <div class="card__overlay">
+                                        <a href="product.html" class="card__overlay"></a>
+                                    </div>
+                                </div>
+                                <div class="block-text">
+                                    <h4 class="block-text__title">Свитшот Sweet Shot</h4>
+                                    <div class="price-block">
+                                        <span class="price-block__item-old"></span>
+                                        <a href="#" class="price-block__item-new">$129</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                        <p class="goods-tape__view">Показано: <span>9</span> из <span>12</span> товаров</p>
+                    </div>
+                    <div class="pag">
+                        <button type="button" class="pag__btn pag__btn_active btn" data-btn="1">1</button>
+                        <button type="button" class="pag__btn btn" data-btn="2">2</button>
+                        <button type="button" class="pag__arr-right" data-btn="2"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="official">
+                    <div class="footer-logo">
+                        <a href="home.html"><img src="assets/img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="conf-info">
+                        <span class="conf-info__item">&#169; Все права защищены</span>
+                        <span class="conf-info__item"><a href="#">Политика конфиденциальности</a></span>
+                        <span class="conf-info__item"><a href="#">Публичная оферта</a></span>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <ul class="navigation">
+                        <li class="navigation__item"><a href="home.html">Главная</a></li>
+                        <li class="navigation__item nav-active"><a href="shop.html">Магазин</a>
+                            <ul class="footer-navigation">
+                                <li class="navigation-new__item"><a href="#">Пальто</a></li>
+                                <li class="navigation-new__item"><a href="#">Свитшоты</a></li>
+                                <li class="navigation-new__item"><a href="#">Кардиганы</a></li>
+                                <li class="navigation-new__item"><a href="#">Толстовки</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item"><a href="about.html">О бренде</a></li>
+                        <li class="navigation__item"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <div class="contact-info">
+                        <a href="tel:+380448235412" class="contact-info__item">+38 (044) 823-54-12</a>
+                        <a href="mailto:hello@womazing.com" class="contact-info__item">hello@womazing.com</a>
+                    </div>
+                    <div class="social-links">
+                        <!--noindex-->
+                        <a href="[https://www.instagram.com](https://www.instagram.com/)" target="_blank"><img src="assets/img/instagram.svg" alt="instagram" class="social-links__item"></a>
+                        <!--/noindex-->
+                        <!--noindex-->
+                        <a href="[https://www.facebook.com](https://www.facebook.com/)" target="_blank"><img src="assets/img/facebook.svg" alt="facebook" class="social-links__item"></a>
+                        <!--/noindex-->
+                        <!--noindex-->
+                        <a href="[https://www.twitter.com](https://www.twitter.com/)" target="_blank"><img src="assets/img/twitter.svg" alt="twitter" class="social-links__item"></a>
+                        <!--/noindex-->
+                    </div>
+                    <img src="assets/img/visa-mastercard 1.png" alt="mastercard" class="social-payment">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
