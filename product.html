@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMAZING/PRODUCT</title>
+
+    <!-- Fonts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/properties.css">
+
+
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+        <div class="block-color"></div>
+            <!-- Logo -->
+            <div class="nav">
+                <div class="nav-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+                </div>
+                <nav class="nav-block">
+                    <ul class="navigation">
+                        <li class="navigation__item"><a href="index.html">Главная</a></li>
+                        <li class="navigation__item"><a href="shop.html">Магазин</a>
+                            <ul class="navigation-new">
+                                <li class="navigation-new__item"><a href="#">Пальто</a></li>
+                                <li class="navigation-new__item"><a href="#">Свитшоты</a></li>
+                                <li class="navigation-new__item"><a href="#">Кардиганы</a></li>
+                                <li class="navigation-new__item"><a href="#">Толстовки</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item"><a href="about.html">О бренде</a></li>
+                        <li class="navigation__item"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-tel">
+                    <button type="button" id="nav-tel__btn" class="nav-tel__btn"></button>
+                    <div class="modals-wrapper" id="modals-wrapper">
+                        <div class="overlay" id="overlay"></div>
+                        <div class="modal-window" id="modal-window">
+                            <h3 class="modal-window__title">Заказать обратный звонок</h3>
+                            <form action="#" class="modal-window-form js-form form-cover" id="form-cover">
+                                <input type="text" name="firstName" placeholder="Имя" class="modal-window-form__item"> 
+                                <input type="email" name="email" class="modal-window-form__item" placeholder="E-mail">
+                                <input type="tel" name="phoneNumber" class="modal-window-form__item" placeholder="Телефон">
+                                <button type="submit" class="modal-window-form__btn btn" data-submit>Заказать звонок</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modals-wrapper_mini" id="modals-wrapper_mini">
+                        <div class="overlay" id="overlay"></div>
+                        <div class="modal-window_mini" id="modal-window_mini">
+                            <h3 class="modal-window_mini__title">Отлично! Мы скоро вам перезвоним.</h3>
+                            <button type="button" class="modal-window__btn">Закрыть</button>
+                        </div>
+                    </div>
+                    <p class="nav-tel__item"><a href="tel:+74958235412">+7 (495) 823-54-12</a></p>
+                </div>
+                <div class="nav-bag">
+                    <a href="bag.html" class="nav-bag__btn"></a>
+                </div>
+                <button type="button" class="mobile-menu">MENU</button>
+                <div class="tel-menu">
+                    <ul class="navigation-tel">
+                        <li class="navigation__item nav-active"><a href="index.html">Главная</a></li>
+                        <li class="navigation__item" id="shop"><a href="shop.html">Магазин</a>
+                            <ul class="navigation-new">
+                                <li class="navigation-new__item"><a href="product.html">Пальто</a></li>
+                                <li class="navigation-new__item"><a href="product.html">Свитшоты</a></li>
+                                <li class="navigation-new__item"><a href="product.html">Кардиганы</a></li>
+                                <li class="navigation-new__item"><a href="product.html">Толстовки</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item"><a href="about.html">О бренде</a></li>
+                        <li class="navigation__item"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <div class="container">
+            <section class="first-screen" id="first-screen">
+               <div class="bread-nav">
+                    <h1 class="bread-nav__title">Свитшот Sweet Shot</h1>
+                    <ul class="bread-nav-block">
+                        <li>
+                            <a href="index.html" class="bread-nav-block__item">Главная</a>
+                        </li>
+                        <li class="bread-nav-block__line"></li>
+                        <li>
+                            <a href="shop.html" class="bread-nav-block__item">Свитшоты</a>
+                        </li>
+                        <li class="bread-nav-block__line"></li>
+                        <li>
+                            <span class="bread-nav-block__item bread-nav-block__item_select">Свитшот Sweet Shot</span>
+                        </li>
+                    </ul>
+               </div>
+            </section>
+            <section class="content" id="content">
+                <div class="edit">
+                    <div class="edit-photo">
+                        <img src="assets/img/model-three.jpg" alt="model" class="edit-photo__item">
+                    </div>
+                    <div class="edit-info">
+                        <div class="edit-info__price">
+                            <h2 class="edit-info__price-new">$311</h2>
+                            <h2 class="edit-info__price-old">$450</h2>
+                        </div>
+                        <form action="#" id="form">
+                            <div class="edit-info__size">
+                                <h4 class="edit-info__size-title">Выберите размер</h4>
+                                <div class="edit-info__size-block">
+                                    <button type="button" class="edit-info__size-block__item">S</button>
+                                    <button type="button" class="edit-info__size-block__item edit-info__size-block__item_active">M</button>
+                                    <button type="button" class="edit-info__size-block__item">L</button>
+                                    <button type="button" class="edit-info__size-block__item">XL</button>
+                                    <button type="button" class="edit-info__size-block__item">XXL</button> 
+                                </div>
+                            </div>
+                            <div class="edit-info__color">
+                                <h4 class="edit-info__size-title">Выберите цвет</h4>
+                                <div class="edit-info__color-block">
+                                    <button type="button" class="edit-info__color-block__item grown"></button>
+                                    <button type="button" class="edit-info__color-block__item gray edit-info__color-block__item_active"></button>
+                                    <button type="button" class="edit-info__color-block__item red"></button>
+                                    <button type="button" class="edit-info__color-block__item yellow"></button>
+                                </div>
+                            </div>
+                            <div class="edit-info__offer">
+                                <input type="number" class="edit-info__offer__item" value="1" min="1" max="100">
+                                <button type="submit" class="edit-info__offer__btn btn">Добавить в корзину</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="products-list">
+                    <h2 class="products-list__title">Связанные товары</h2>
+                    <div class="products-list-block">
+                        <div class="products-list-block__item">
+                            <div class="products-list-block__item-card">
+                                <img src="assets/img/model.jpg" alt="model" class="model">
+                                <div class="card__overlay">
+                                    <a href="product.html" class="card__overlay"></a>
+                                </div>
+                            </div>
+                            <div class="products-list-block__item-text">
+                                <h4 class="products-list-block__item-text__title">Футболка USA</h4>
+                                <span class="products-list-block__item-text__price">$129</span>
+                            </div>
+                        </div> 
+                        <div class="products-list-block__item">
+                            <div class="products-list-block__item-card">
+                                <img src="assets/img/model-two.jpg" alt="model" class="model">
+                                <div class="card__overlay">
+                                    <a href="product.html" class="card__overlay"></a>
+                                </div>
+                            </div>
+                            <div class="products-list-block__item-text">
+                                <h4 class="products-list-block__item-text__title">Купальник Glow</h4>
+                                <span class="products-list-block__item-text__price">$129</span>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="official">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="conf-info">
+                        <span class="conf-info__item">&#169; Все права защищены</span>
+                        <span class="conf-info__item"><a href="#">Политика конфиденциальности</a></span>
+                        <span class="conf-info__item"><a href="#">Публичная оферта</a></span>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <ul class="navigation">
+                        <li class="navigation__item nav-active"><a href="index.html">Главная</a></li>
+                        <li class="navigation__item"><a href="shop.html">Магазин</a>
+                            <ul class="footer-navigation">
+                                <li class="navigation-new__item"><a href="#">Пальто</a></li>
+                                <li class="navigation-new__item"><a href="#">Свитшоты</a></li>
+                                <li class="navigation-new__item"><a href="#">Кардиганы</a></li>
+                                <li class="navigation-new__item"><a href="#">Толстовки</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item"><a href="about.html">О бренде</a></li>
+                        <li class="navigation__item"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <div class="contact-info">
+                        <a href="tel:+380448235412" class="contact-info__item">+38 (044) 823-54-12</a>
+                        <a href="mailto:hello@womazing.com" class="contact-info__item">hello@womazing.com</a>
+                    </div>
+                    <div class="social-links">
+                        <!--noindex-->
+                        <a href="[https://www.instagram.com](https://www.instagram.com/)" target="_blank"><img src="assets/img/instagram.svg" alt="instagram" class="social-links__item"></a>
+                        <!--/noindex-->
+                        <!--noindex-->
+                        <a href="[https://www.facebook.com](https://www.facebook.com/)" target="_blank"><img src="assets/img/facebook.svg" alt="facebook" class="social-links__item"></a>
+                        <!--/noindex-->
+                        <!--noindex-->
+                        <a href="[https://www.twitter.com](https://www.twitter.com/)" target="_blank"><img src="assets/img/twitter.svg" alt="twitter" class="social-links__item"></a>
+                        <!--/noindex-->
+                    </div>
+                    <img src="assets/img/visa-mastercard 1.png" alt="mastercard" class="social-payment">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
